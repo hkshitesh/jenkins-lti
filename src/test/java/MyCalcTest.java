@@ -10,7 +10,7 @@ public class MyCalcTest {
 	public void test() {
 
 		MyCalc calc = new MyCalc();
-		assertEquals(30,calc.sum(20,10));
+		assertEquals(40,calc.sum(20,10));
 	}
 
 }
