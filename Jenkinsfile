@@ -9,14 +9,19 @@ pipeline {
 				 steps {
 				 	sh 'mvn clean'
 				 }
+				 stage('Stage 2: Test Stage')
+				{
+				 steps {
+				 	sh 'mvn test'
 				 }
-				stage('Stage 2: Build Stage')
+				 }
+				stage('Stage 3: Build Stage')
 				{
 				 steps {
 				 	sh 'mvn install'
 				 }
 				 }
-				 stage('Stage 3: Build Complete')
+				 stage('Stage 4: Build Complete')
 				{
 				 steps {
 				 	echo 'Build complete'
