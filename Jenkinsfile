@@ -9,6 +9,7 @@ pipeline {
 				 steps {
 				 	sh 'mvn clean'
 				 }
+				 }
 				 stage('Stage 2: Test Stage')
 				{
 				 steps {
